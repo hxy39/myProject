@@ -7,10 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* ===========================================
    Projects Functions (Person C)
-//    =========================================== */
-// function initProjects() {
-//     // TODO: Implement project interactivity
-// }
+   =========================================== */
 function initProjects() {
     const projectButtons = document.querySelectorAll('.project-btn');
     
