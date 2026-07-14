@@ -1,0 +1,108 @@
+
+<!-- saved from url=(0139)https://hw.mail.163.com/js6/read/readhtml3.jsp?mid=741:xtbC5RlSJWpV0LkQvAAA3x&userType=ud&moduleName=read.ReadModule_0&font=15&color=3370FF -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base target="_blank">--><base href="." target="_blank">
+<style type="text/css">
+::-webkit-scrollbar{ display: none; }
+</style>
+<style id="cloudAttachStyle" type="text/css">
+#divNeteaseBigAttach, #divNeteaseBigAttach_bak{display:none;}
+.netease-cloudattach{display:none;}
+</style>
+</head>
+<body tabindex="0" role="listitem">
+
+<template id="contentTemplate"></template>
+<div id="content" class="netease_mail_readhtml netease_mail_readhtml_webmail"><style>
+.nds-quote-trigger {
+  display: block;
+  font-size: 12px;
+  color: #5c6efc;
+  cursor: pointer;
+  -ms-user-select: none;
+  user-select: none;
+}
+.netease_mail_readhtml_webmail {
+  padding: 1px 0;
+}
+.netease_mail_readhtml_webmail::after {
+  content: " ";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  height: 0;
+}
+</style><div data-nds-name="main" data-nds-mobile="false"><div data-ntes="ntes_mail_body_root" style="line-height:1.7;color:#000000;font-size:14px;font-family:Arial"><div style="margin:0;"><br></div></div></div></div>
+<style type="text/css">
+* {
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+body{font-size:14px;font-family:arial,verdana,sans-serif;line-height:1.666;padding:0;margin:0;overflow:auto;word-wrap:break-word;min-height:100px;}
+td, th, input, button, select, body{font-family:Helvetica, 'Microsoft Yahei', verdana}
+pre {white-space:pre-wrap !important;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;}
+pre * { white-space: unset !important; }
+img{ border:0;overflow: hidden;}
+header,footer,section,aside,article,nav,hgroup,figure,figcaption{display:block;}
+blockquote{margin: 0;}
+</style>
+
+<style id="ntes_link_color" type="text/css">a,td a{color:#3370FF}</style>
+
+
+<script>
+window.r_a_h=function(){return [{'id':'3','filename':'_'}];};
+</script>
+
+<script>
+	var contentTemplate = document.getElementById("contentTemplate");
+	var contentElem = document.getElementById("content");
+
+	(function () {
+		if (!contentElem) {
+			return;
+		}
+
+		var win = window.top || window;
+		var sModuleName = "read.ReadModule_0";
+		var sToken = "";
+		var oModule;
+
+		if (win.$ && win.$S) {
+			if (win.$S('viewType')) {
+				if (win.$.SM) {
+					oModule = win.$.SM.find(sModuleName);
+				}
+				if (!oModule && win.$.JS) {
+					oModule = win.$.JS.find(sModuleName);
+				}
+			} else {
+				if (win.$.JS) {
+					oModule = win.$.JS.find(sModuleName);
+				}
+				if (!oModule && win.$.SM) {
+					oModule = win.$.SM.find(sModuleName);
+				}
+			}
+		}
+		if (oModule) {
+			if (oModule.isThread && oModule.threadItems && sToken) {
+				var threadItem = oModule.threadItems[sToken];
+
+				if (threadItem && threadItem.reader && threadItem.reader.body && threadItem.reader.body.mailOnLoad) {
+					threadItem.reader.body.mailOnLoad(contentElem, contentTemplate.content, window);
+					return;
+				}
+			} else {
+				if (oModule.reader && oModule.reader.body && oModule.reader.body.mailOnLoad) {
+					oModule.reader.body.mailOnLoad(contentElem, contentTemplate.content, window);
+					return;
+				}
+			}	
+		}
+
+
+		contentElem.appendChild(contentTemplate.content);
+	})();
+</script>
+</body></html>
